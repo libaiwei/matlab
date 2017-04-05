@@ -1,0 +1,10 @@
+file = '/Users/baiweili/Documents/MATLAB/data/wcy/data_ear1.mat';
+file1 = '/Users/baiweili/Documents/MATLAB/data/test1/data.mat';
+a=load(file, 'matrix');
+a1=load(file1, 'matrix');
+b = a.matrix(2,:);
+b1 = a1.matrix(2,:);
+figure;
+hist(b,100);
+figure;
+hist(b1,100);
